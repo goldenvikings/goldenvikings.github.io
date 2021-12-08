@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* bra fonnttt??? */
+}
+
+#logga {
+    max-width: 357px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    user-select: none;
+    background-color: #f0f2f5;
+    width: 100%;
+}
+
+.fixed-header {
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    height: 220px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li a {
+    transition: all .5s;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+nav li a:hover {
+    letter-spacing: 1px;
+}
+
+#banner {
+    position: relative;
+    text-align: center;
+}
+
+#banner img {
+    width: 100%;
+}
+
+
+
+#banner #välkommen {
+    padding: 30px 60px;
+    background-color: #f0f2f5;
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+.section {
+    grid-template-columns: 1fr;
+    display: grid;
+}
+
+.column4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#hem {
+    background-color: #f0f2f5;
+}
+
+#hem .section>.content {
+    /* border-right: 2px solid grey; */
+    margin-right: 5px;
+}
+
+.spel-sektion {
+    text-align: center;
+}
+
+.spel-sektion h1 {
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+.alla-spel {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.float {
+    float: left
+}
+
+.spel-info {
+    margin: 20px;
+}
+
+.spel-info img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #fe0002;
+}
+
+iframe {
+    width: 99%;
+    height: 99%;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fe0002;
+    text-align: center;
+    color: #f0f2f5;
+    z-index: 2;
+}
+
+#utbuds-meny {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+    z-index: 3;
+    background-color: #f4f6f4;
+    width: 150px;
+}
+
+#utbuds-meny ul {
+    padding: 0;
+}
+
+#utbuds-meny li {
+    padding-top: 20px;
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#utbuds-meny li a {
+    text-decoration: none;
+    color: black;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+#utbuds-meny li a:hover {
+    letter-spacing: 2px;
+}
+
+#bilder2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#bilder2 img {
+    max-height: 500px;
+    max-width: 100%;
+}
+
+.content img {
+    width: 200px;
+    /* temporär */
+}
+
+.kategori .content {
+    text-align: center;
+}
+
+.kategori-titel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.kategori-titel div {
+    width: 50%;
+    border-top: 1px solid grey;
+    margin-top: 10px;
+}
+
+.kategori-titel h1 {
+    font-size: 3em;
+}
+
+.viktig-info {
+    text-align: center;
+}
+
+.viktig-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .section,
+    .column4 {
+        grid-template-columns: 1fr;
+    }
+
+    .alla-spel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #banner #välkommen {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .spel-sektion h1 {
+        font-size: 1.8em;
+    }
+}
+
+
