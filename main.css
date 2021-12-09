@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* bra fonnttt??? */
 }
 
 #logga {
@@ -247,9 +246,9 @@ footer {
         font-size: 1.8em;
     }
     #utbuds-meny {
-        width: 80px;
+        width: 87px;
     }
     #utbudsida {
-        padding-left: 60px;
+        padding-left: 70px;
     }
 }
